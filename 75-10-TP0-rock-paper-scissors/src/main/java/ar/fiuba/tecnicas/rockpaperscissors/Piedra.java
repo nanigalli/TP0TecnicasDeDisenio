@@ -1,19 +1,19 @@
 package ar.fiuba.tecnicas.rockpaperscissors;
 
-public class Piedra {
+public class Piedra implements Enfrentador {
 
 	public Piedra(){
 	}
 	
-	public Piedra vs(Piedra contrincante){
+	public Enfrentador vs(Piedra contrincante){
 		return this;
 	}
 	
-	public Piedra vs(Tijera contrincante){
+	public Enfrentador vs(Tijera contrincante){
 		return this;
 	}
 	
-	public Papel vs(Papel contrincante){
+	public Enfrentador vs(Papel contrincante){
 		return contrincante;
 	}
 	
